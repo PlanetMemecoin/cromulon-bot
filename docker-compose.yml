@@ -1,0 +1,12 @@
+version: '3'
+services:
+  cromulon:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - DISCORD_TOKEN=${DISCORD_TOKEN}
+      - TWITTER_API_KEY=${TWITTER_API_KEY}
+      - TWITTER_API_SECRET=${TWITTER_API_SECRET}
+      - TWITTER_ACCESS_TOKEN=${TWITTER_ACCESS_TOKEN}
+      - TWITTER_ACCESS_SECRET=${TWITTER_ACCESS_SECRET} 
